@@ -1,0 +1,17 @@
+{
+    "display_name": "Deck Browser CSS",
+    "module_name": "deckbrowser_css",
+    "repo_name": "deckbrowser-css",
+    "ankiweb_id": "153779542",
+    "author": "Simon Kelly",
+    "contact": "https://github.com/simonkellly",
+    "homepage": "https://github.com/simonkellly/deckbrowser-css",
+    "copyright_start": 2021,
+    "tags": "deck browser theme customization",
+    "conflicts": [],
+    "targets": [
+        "anki21"
+    ],
+    "min_anki_version": "2.1.22",
+    "tested_anki_version": "2.1.49"
+}

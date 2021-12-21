@@ -1,0 +1,44 @@
+tr {
+  border-color: #00000000;
+  border-spacing: 0;
+}
+
+tr.deck td {
+  border-bottom-color: #29292B;
+  border-bottom: 0;
+}
+
+tr.drag-hover td {
+  border-bottom-color: #777;
+}
+
+.current {
+  background-color: #29292B00;
+}
+
+center {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+table {
+  padding: 25px;
+  background: #68729455;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.night-mode .zero-count {
+  color: #737070
+}
+
+.heatmap {
+  padding: 15px;
+  background: #68729455;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.rh-container {
+  padding: 15px;
+}
