@@ -1,4 +1,5 @@
 {
     "cssPath": "/user_files/deckbrowser_injected.css",
+    "toolbarCssPath": "/user_files/toolbar_injected.css",
     "overrideOriginal": false
 }
