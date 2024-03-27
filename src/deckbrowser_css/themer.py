@@ -1,5 +1,6 @@
 import os
 from anki.hooks import wrap
+from aqt.mediasrv import PageContext
 from aqt.webview import AnkiWebView
 from aqt import gui_hooks, mw, toolbar
 from typing import Callable
@@ -19,7 +20,7 @@ def enable_toolbar_css(*argv):
     useDeckBrowser = False
     AnkiWebView.setHtml = setHtml
 
-def setHtml(self: AnkiWebView, html: str) -> None:
+def setHtml(self: AnkiWebView, html: str, context: PageContext) -> None:
     global originalSetHtml
     global useDeckBrowser
     if config["overrideOriginal"]:
@@ -32,7 +33,7 @@ def setHtml(self: AnkiWebView, html: str) -> None:
         idx = html.index("</head>")
         html = html[:idx] + lines + html[idx:]
 
-    originalSetHtml(self, html)
+    originalSetHtml(self, html, context)
     AnkiWebView.setHtml = originalSetHtml
 
 toolbar.Toolbar.draw = wrap(toolbar.Toolbar.draw, enable_toolbar_css, "before")
